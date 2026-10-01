@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #090b10;
+    color: #eeeeee;
+    font-family: "Courier New", monospace;
+}
+
+.screen {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* LOGIN */
+
+.terminal {
+    width: 600px;
+    max-width: 100%;
+
+    background: #11151c;
+
+    border: 1px solid #444;
+
+    padding: 40px;
+
+    box-shadow:
+        0 0 30px rgba(0, 255, 120, 0.08);
+}
+
+.green {
+    color: #6cff9b;
+}
+
+.terminal h1 {
+    letter-spacing: 4px;
+}
+
+input {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    background: #050609;
+
+    color: white;
+
+    border: 1px solid #555;
+
+    font-family: inherit;
+}
+
+button {
+    margin-top: 15px;
+
+    padding: 13px 20px;
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid #777;
+
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+#error {
+    color: #ff6666;
+}
+
+
+/* MAIN FILE */
+
+.file {
+    width: 900px;
+    max-width: 100%;
+
+    background: #11151c;
+
+    padding: 40px;
+
+    border: 1px solid #444;
+}
+
+.classified {
+    color: #ff5555;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.file h1 {
+    letter-spacing: 5px;
+}
+
+hr {
+    border: none;
+
+    border-top: 1px solid #333;
+
+    margin: 40px 0;
+}
+
+
+/* PHOTOS */
+
+.photos {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.photos img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border: 1px solid #555;
+
+    transition: 0.3s;
+}
+
+.photos img:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+
+/* MESSAGE */
+
+.message {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border: 1px solid #555;
+
+    line-height: 1.8;
+
+    animation: fadeIn 1s;
+}
+
+#final {
+    margin-top: 40px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid #777;
+
+    animation: fadeIn 1.5s;
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Boyfriend File</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PASSWORD SCREEN -->
+
+    <section id="loginScreen" class="screen">
+
+        <div class="terminal">
+
+            <p class="green">████ SECRET SYSTEM ████</p>
+
+            <h1>THE BOYFRIEND FILE</h1>
+
+            <p>🔐 CLASSIFIED INFORMATION</p>
+
+            <p>Subject: <span id="boyName">BOIPHRIEND</span></p>
+
+            <p>Access requires password.</p>
+
+            <input 
+                type="password" 
+                id="password"
+                placeholder="Enter password..."
+            >
+
+            <button onclick="checkPassword()">
+                ACCESS FILE
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN FILE -->
+
+    <section id="mainFile" class="screen hidden">
+
+        <div class="file">
+
+            <p class="classified">🔴 CLASSIFIED</p>
+
+            <h1>SUBJECT FILE</h1>
+
+            <div class="profile">
+
+                <div>
+                    <p><b>Name:</b> Prince Jason</p>
+                    <p><b>Status:</b> Boyfriend ❤️</p>
+                    <p><b>Threat Level:</b> Extremely Cute</p>
+                    <p><b>Annoyance Level:</b> 50%</p>
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+            <h2>📁 MEMORY ARCHIVE</h2>
+
+            <div class="photos">
+
+                <img src="photo 1.jpeg">
+
+                <img src="photo 2.jpg">
+
+                <img src="photo 3.jpg">
+
+            </div>
+
+
+            <h2>💌 IMPORTANT INFORMATION</h2>
+
+            <p id="message">
+                There are approximately a million things
+                I could say here...
+            </p>
+
+            <button onclick="showMessage()">
+                OPEN SECRET MESSAGE 💗
+            </button>
+
+
+            <p id="secretMessage" class="hidden message">
+
+                I don't really know how to put everything
+                into words, but I'm really really glad
+                you're in my life.
+
+                <br><br>
+
+                Thank you for being you.
+
+                <br><br>
+
+                Happy Boyfriend's Day ❤️
+
+            </p>
+
+
+            <hr>
+
+
+            <button onclick="finalSurprise()">
+                FINAL FILE 🔐
+            </button>
+
+
+            <div id="final" class="hidden">
+
+                <h1>❤️ FILE COMPLETE ❤️</h1>
+
+                <p>
+
+                    After extensive scientific research...
+
+                    <br><br>
+
+                    I have concluded that you're stuck
+                    with me.
+
+                    <br><br>
+
+                    Sorry. No refunds. 😌
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
